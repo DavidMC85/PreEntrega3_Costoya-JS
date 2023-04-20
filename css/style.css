@@ -1,0 +1,70 @@
+.fondo {
+  background-color: rgb(9, 3, 30);
+}
+
+.table {
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.calcu {
+    background-color: rgb(4, 37, 29);
+    margin: auto;
+}
+
+  .margen {
+    margin-top: 50px;
+    padding: 1%;
+    padding-top:25px ;
+    border-radius: 5px;
+    
+  }
+  .boton_calcu {
+    border-radius: 1px;
+  }
+  .boton_igual {
+    border-radius: 1px;
+  }  
+
+
+.display {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#visor{
+  font-family: 'Courier New', Courier, monospace;
+}
+#historico{
+  font-family: 'Courier New', Courier, monospace;
+}
+#titulo{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: auto;
+  margin-top: 110px;
+  font-size: large;
+  color: rgb(156, 149, 149);
+}
+.borde{
+  -webkit-box-shadow: 0 3px 9px black;
+  box-shadow: 0 3px 9px black;
+  border-radius: 3px;
+  -webkit-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
+
+.centro {
+  width:100%;
+  height:100%;
+  }
+
+.boton_salir {
+  max-width: fit-content;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  border: 2px solid red;
+}
