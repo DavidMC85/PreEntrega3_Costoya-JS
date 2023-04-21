@@ -1,5 +1,3 @@
-
-
 // array (const global)
 const OPERACIONES = ["+", "-", "*", "/"];
 const NOMBRE = localStorage.getItem("Nombre")
@@ -10,15 +8,11 @@ let numeroB;
 let operacion;
 let ahora = new Date();
 
-//----------
-
-// Mostrar el nombre, saludo y reseteo al refrescar
-
-
-
 //poner en 0 el display al refrescar
 
 window.onload = inicio
+
+//saludito
 
 window.onload = function() {
   swal({
@@ -83,22 +77,6 @@ function btn_igual() {
   resultado();
 }
 
-//conteo de resultados!
-
-let button = document.getElementById("boton=");
-let count = 0;
-
-for (let i = 0; i < 1; i++) {
-  button.addEventListener("click", function () {
-    count++;
-    if (count === 1) {
-      console.log("He calculado mi primer resultado!")
-    }
-    else {
-      console.log("Ya he calculado " + count + " resultados! Soy grossa!");
-    }
-  });
-}
 
 //resultados
 

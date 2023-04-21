@@ -14,7 +14,7 @@
 }
 .main-parent .form-wrap {
 	width: 450px;
-	background: rgba(191, 191, 191, 0.398);
+	background: rgba(115, 115, 115, 0.611);
 	border-radius: 10px;
 	padding: 35px 40px;
 	backdrop-filter: blur(5px);
@@ -28,13 +28,13 @@
 .main-parent .form-wrap .single-input input {
 	width: 100%;
 	padding: 14px 10px;
-	border: 1.4px solid white;
+	
 	outline: none;
-	background-color: transparent;
+	background-color: rgb(189, 189, 189);
 	margin-bottom: 10px;
 	font-size: 15px;
-	font-family: "Roboto", sans-serif;
 	font-weight: 700;
+	color: rgb(0, 0, 0);
 }
 .registro-button {
 	text-align: center;
@@ -52,10 +52,8 @@
 	margin-top: 10px;
 }
 
-input {
-	color: rgb(255, 255, 255);
-	font-weight: 550;
-}
+
+
 
 .account-have {
 	margin-top: 18px;
@@ -70,6 +68,10 @@ input {
 	color: rgb(0, 0, 195);
 	font-weight: 800;
 	margin-top: 15px;
+}
+
+.account-have p {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {

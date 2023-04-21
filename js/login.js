@@ -8,7 +8,7 @@ registro_button.onclick = (e) => {
 	const contraseña = document.getElementById("contraseña").value;
 	const ccontraseña = document.getElementById("ccontraseña").value;
 
-	//crear objeto con los datos
+	//crear objeto con los datos del userrr
 	const usuario = {
 		nombre,
 		email,
@@ -16,10 +16,10 @@ registro_button.onclick = (e) => {
 		ccontraseña
 	};
 
-	//convertir objeto a cadena JSON
+	//JASON BOURNE
 	const usuarioJSON = JSON.stringify(usuario);
 
-	//guardar cadena JSON en el almacenamiento local
+	//guardar string en localS.
 	localStorage.setItem('usuario', usuarioJSON);
 
 	//condicionales
@@ -31,24 +31,22 @@ registro_button.onclick = (e) => {
 		if(contraseña !== ccontraseña){
 			swal("Advertencia!", "Las contraseñas no coinciden!", "error");
 		}else{
-			swal("Usted está registrado!", "juguemos!", "success"),
+			swal("Registro realizado con éxito", "success"),
 			window.location.replace("index.html");
 		}
 	}
 }
 
-//acceso una vez registrado
+//login con los datos en localS.
+
 const login = document.querySelector('.login');
 login.onclick = (e) => {
     e.preventDefault();
 
-    //traer valores desde la pagina de inicio de sesion
     const Direccionemail = document.getElementById("email").value;
     const passWord = document.getElementById("contraseña").value;
-
-    //obtener cadena JSON desde el almacenamiento local y convertirla a objeto
     const usuarioJSON = localStorage.getItem("usuario");
-    const usuario = JSON.parse(usuarioJSON);
+    const usuario = JSON.parse(usuarioJSON); //desarmar el string
 
     if(Direccionemail == "" && passWord == ""){
         swal("Advertencia!", "No completaste ningún campo", "error");
